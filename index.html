@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Web Design Documentation</title>
 
@@ -19,20 +19,77 @@
     <nav id="navbar">
         <header>Responsive Web Design Documentation</header>
         <ul>
-            <li><a class="nav-link" href="#Section1">Section1</a></li>
-            <li><a class="nav-link" href="#Section2">Section2</a></li>
-            <li><a class="nav-link" href="#Section3">Section3</a></li>
-            <li><a class="nav-link" href="#Section4">Section4</a></li>
-            <li><a class="nav-link" href="#Section5">Section5</a></li>
+            <a class="nav-link" href="#About"><li>About</li></a>
+            <a class="nav-link" href="#Bootstrap"><li>Bootstrap</li></a>
+            <a class="nav-link" href="#Section3"><li>Section3</li></a>
+            <a class="nav-link" href="#Section4"><li>Section4</li></a>
+            <a class="nav-link" href="#Section5"><li>Section5</li></a>
         </ul>
     </nav>
 
     <main id="main-doc">
-        <section id="Section1" class="main-section">
-            <header>Section1</header>
+        <section id="About" class="main-section">
+            <header>About</header>
+            <p>In this documentation, you will find codes you need to design a responsive website or application.</p>
+            <p>I will add codes that I feel will be very useful.</p>
         </section>
-        <section id="Section2" class="main-section">
-            <header>Section2</header>
+        <section id="Bootstrap" class="main-section">
+            <header>Bootstrap</header>
+            <p>Bootstrap is the most popular framework for building responsive, mobile-first sites.</p>
+            <p>To use Bootstrap, you will need to add a few links into your page setup. This includes a <code>&lt;link&gt;</code> that goes in the <code>&lt;head&gt;</code> before all other stylesheets and a few <code>&lt;script&gt;</code>s before the closing <code>&lt;/body&gt;</code> tag. jQuery must come first, then Popper.js, and then the JavaScript plugins. </p>
+            <p>Your pages should be set up with the latest design and development standards. Use an HTML5 doctype and include a viewport meta tag for proper responsive behaviors. Your pages should look like this:</p>
+            <pre>    
+                <code class="language-html">
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;!-- Required meta tags --&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+
+        &lt;!-- Bootstrap CSS --&gt;
+        &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        &lt;title&gt;Hello, world!&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+        &lt;!-- Optional JavaScript --&gt;
+        &lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;
+        &lt;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"&gt;&lt;/script&gt;
+        &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"&gt;&lt;/script&gt;
+        &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                </code>
+            </pre>
+            <p>The following is an example of how to use Bootstrap's grid system:</p>
+            <div class="container text-center" style="width:100%;">
+                <div class="row">
+                    <div class="col-sm-3" style="background-color:rgb(162, 238, 238); padding:10px;">
+                        Left Div
+                    </div>
+                    <div class="col-sm-9" style="background-color:rgb(213, 184, 240); padding:10px;">
+                        Right Div
+                    </div>
+                </div>
+            </div>
+            <pre>
+                <code class="language-html">
+&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4"&gt;   
+            &lt;div class="left-div"&gt;Left Div&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-8"&gt;
+            &lt;div class="right-div"&gt;Right Div&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                </code>
+            </pre>
+            <p>For more info, <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="blank">click here</a>.</p>
         </section>
         <section id="Section3" class="main-section">
             <header>Section3</header>
