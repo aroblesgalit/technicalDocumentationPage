@@ -33,6 +33,8 @@
             <p>In this documentation, you will find codes you need to design a responsive website or application.</p>
             <p>I will add codes that I feel will be very useful.</p>
         </section>
+
+
         <section id="Bootstrap" class="main-section">
             <header>Bootstrap</header>
             <p>Bootstrap is the most popular framework for building responsive, mobile-first sites.</p>
@@ -82,6 +84,8 @@
             </code></pre>
             <p>For more info, <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="blank">click here</a>.</p>
         </section>
+
+
         <section id="CSS_Flexbox" class="main-section">
             <header>CSS Flexbox</header>
             <p>The Flexbox Layout (Flexible Box) module (a W3C Candidate Recommendation as of October 2017) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word "flex").
@@ -224,14 +228,61 @@
             <br />
             <p>Note that float, clear and vertical-align have no effect on a flex item.</p>
 
-
-
-
             <br/ ><p>For more info, <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="blank">click here</a>.</p>
         </section>
+
+
         <section id="CSS_Grid" class="main-section">
             <header>CSS Grid</header>
+            <p>CSS Grid Layout (aka "Grid"), is a two-dimensional grid-based layout system that aims to do nothing less than completely change the way we design grid-based user interfaces. CSS has always been used to lay out our web pages, but it's never done a very good job of it. First, we used tables, then floats, positioning and inline-block, but all of these methods were essentially hacks and left out a lot of important functionality (vertical centering, for instance). Flexbox helped out, but it's intended for simpler one-dimensional layouts, not complex two-dimensional ones (Flexbox and Grid actually work very well together). Grid is the very first CSS module created specifically to solve the layout problems we've all been hacking our way around for as long as we've been making websites.
+                <br /><br />To get started you have to define a container element as a grid with <code>display: grid</code>, set the column and row sizes with <code>grid-template-columns</code> and <code>grid-template-rows</code>, and then place its child elements into the grid with <code>grid-column</code> and <code>grid-row</code>. Similarly to flexbox, the source order of the grid items doesn't matter. Your CSS can place them in any order, which makes it super easy to rearrange your grid with media queries. Imagine defining the layout of your entire page, and then completely rearranging it to accommodate a different screen width all with only a couple lines of CSS. Grid is one of the most powerful CSS modules ever introduced.
+            </p>
+            <br />
+
+            <p><b>Terminology</b>
+                <br /><br /><b>Grid Container:</b> The element on which <code>display: grid</code> is applied. It's the direct parent of all the grid items.
+                <br /><b>Grid Item:</b> The children (i.e. <em>direct</em> descendants) of the grid container. 
+                <br /><b>Grid Line:</b> The dividing lines that make up the structure of the grid. They can be either vertical ("column grid lines") or horizontal ("row grid lines") and reside on either side of a row or column.
+                <br /><b>Grid Track:</b> The space between two adjacent grid lines. You can think of them like the columns or rows of the grid.
+                <br /><b>Grid Cell:</b> The space between two adjacent row and two adjacent column grid lines. It's a single "unit" of the grid.
+                <br /><b>Grid Area:</b> The total space surrounded by four grid lines. A grid area may be comprised of any number of grid cells.
+            </p>
+
+            <br />
+            <p><b>Properties for the Parent (grid container)</b>
+                <br /><br /><code>display</code>
+                <br />Defines the element as a grid container and establishes a new grid formatting context for its contents.
+            </p>
+            <pre><code>display: grid | inline-grid;</code></pre>
+            <p><code>grid</code>: generates a block-level grid</p>
+            <p><code>inline-grid</code>: generates an inline-level grid</p>
+
+            <br />
+            <p><code>grid-template-columns</code>, <code>grid-template-rows</code>
+                <br />Defines the columns and rows of the grid with a space-separated list of values. The values represent the track size, and the space between them represents the grid line.
+            </p>
+            <pre><code>grid-template-columns: &lt;track-size&gt; ... | &lt;line-name&gt; &lt;track-size&gt; ...;<br />grid-template-rows: &lt;track-size&gt; ... | &lt;line-name&gt; &lt;track-size&gt; ...;</code></pre>
+            <p><code>&lt;track-size&gt;</code>: can be a length, a percentage, or a fraction of the free space in the grid (using the <code>fr</code> unit)</p>
+            <p><code>&lt;line-name&gt;</code>: an arbitrary name of your choosing</p>
+
+            <br />
+            <p><code>grid-template-areas</code>
+                <br />Defines a grid template by referencing the names of the grid areas which are specified with the <code>grid-area</code> property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.
+            </p>
+            <pre><code>grid-template-areas:<br />    "&lt;grid-area-name&gt; | . | none | ..."<br />    "...";</code></pre>
+            <p><code>&lt;grid-area-name&gt;</code>: the name of a grid area specified with <code>grid-area</code></p>
+            <p><code>.</code>: a period signifies an empty grid cell</p>
+            <p><code>none</code>: no grid areas are defined</p>
+
+            <br />
+            <p><code>grid-template</code>
+                <br />A shorthand for setting <code>grid-template-rows</code>, <code>grid-template-columns</code>, and <code>grid-template-areas</code> in a single declaration.
+            </p>
+            <pre><code>grid-template: none | &lt;grid-template-rows&gt; / &lt;grid-template-columns&gt;;</code></pre>
+
         </section>
+
+
         <section id="References" class="main-section">
             <header>References</header>
         </section>
