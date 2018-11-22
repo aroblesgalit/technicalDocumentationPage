@@ -279,6 +279,40 @@
                 <br />A shorthand for setting <code>grid-template-rows</code>, <code>grid-template-columns</code>, and <code>grid-template-areas</code> in a single declaration.
             </p>
             <pre><code>grid-template: none | &lt;grid-template-rows&gt; / &lt;grid-template-columns&gt;;</code></pre>
+            <p><code>none</code>: sets all three properties to their initial values</p>
+            <p><code>&lt;grid-template-rows&gt; / &lt;grid-template-columns&gt;&lt;/grid-template-columns&gt;</code>: sets <code>grid-template-columns</code> and <code>grid-template-rows</code> to the specified values, respectively, and sets <code>grid-template-areas</code> to <code>none</code></p>
+
+            <br />
+            <p><code>grid-column-gap</code>, <code>grid-row-gap</code>
+                <br />Specifies the size of the grid lines. You can think of it like setting the width of the gutters between the columns/rows.
+            </p>
+            <pre><code>grid-column-gap: &lt;line-size&gt;;<br />grid-row-gap: &lt;line-size&gt;;</code></pre>
+            <p><code>&lt;line-size&gt;</code>: length value</p>
+
+            <br />
+            <p><code>grid-gap</code>
+                <br />A shorthand for <code>grid-row-gap</code> and <code>grid-column-gap</code>
+            </p>
+            <pre><code>grid-gap: &lt;grid-row-gap&gt; &lt;grid-column-gap&gt;;</code></pre>
+            <p><code>&lt;grid-row-gap&gt; &lt;grid-column-gap&gt;</code>: length values</p>
+            <br /><p>If no <code>grid-row-gap</code> is specified, it's set to the same value as <code>grid-column-gap</code></p>
+
+            <br />
+            <p><code>justify-items</code>
+                <br />Aligns grid items along the <em>inline (row)</em> axis (as opposed to <code>align-items</code> which aligns along the <em>block (column)</em> axis). This value applies to all grid items inside the container.
+            </p>
+            <pre><code>justify-items: start | end | center | stretch;</code></pre>
+            <p><code>start</code>: aligns items to be flush with the start edge of their cell</p>
+            <p><code>end</code>: aligns items to be flush with the end edge of their cell</p>
+            <p><code>center</code>: aligns items in the center of their cell</p>
+            <p><code>stretch</code>: fills the whole width of the cell (this is the default)</p>
+
+            <br />
+            <p><code>align-items</code>
+                <br />Aligns grid items along the <em>block (column)</em> axis (as opposed to <code>justify-items</code> which aligns along the <em>inline (row)</em> axis). This value applies to all grid items inside the container.
+            </p>
+
+
 
         </section>
 
