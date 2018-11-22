@@ -127,19 +127,23 @@
                 <br />This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
             </p>
             <pre><code>flex-direction: row | row-reverse | column | column-reverse;</code></pre>
-            <p><code>row</code> (default): left to right</p>
-            <p><code>row-reverse</code>: right to left</p>
-            <p><code>column</code>: top to bottom</p>
-            <p><code>column-reverse</code>: bottom to top</p>
-            
+            <ul>
+                <li><code>row</code> (default): left to right</li>
+                <li><code>row-reverse</code>: right to left</li>
+                <li><code>column</code>: top to bottom</li>
+                <li><code>column-reverse</code>: bottom to top</li>
+            </ul>
+                       
             <br />
             <p><code>flex-wrap</code>
                 <br />By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
             </p>
             <pre><code>flex-wrap: nowrap | wrap | wrap-reverse;</code></pre>
-            <p><code>nowrap</code> (default): all flex items will be on one line</p>
-            <p><code>wrap</code>: flex items will wrap onto multiple lines, from top to bottom</p>
-            <p><code>wrap-reverse</code>: flex items will wrap onto multiple lines from bottom to top</p>
+            <ul>
+                    <li><code>nowrap</code> (default): all flex items will be on one line</li>
+                    <li><code>wrap</code>: flex items will wrap onto multiple lines, from top to bottom</li>
+                    <li><code>wrap-reverse</code>: flex items will wrap onto multiple lines from bottom to top</li>                
+            </ul>
             
             <br />
             <p><code>flex-flow</code>
@@ -152,23 +156,27 @@
                 <br />This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
             </p>
             <pre><code>justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;</code></pre>
-            <p><code>flex-start</code> (default): items are packed toward the start line</p>
-            <p><code>flex-end</code>: items are packed toward to end line</p>
-            <p><code>center</code>: items are centered along the line</p>
-            <p><code>space-between</code>: items are evenly distributed in the line; first item is on the start line, last item on the end line</p>
-            <p><code>space-around</code>: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren't equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.</p>
-            <p><code>space-evenly</code>: items are distributed so that the spacing between any two items (and the space to the edges) is equal</p>
+            <ul>
+                <li><code>flex-start</code> (default): items are packed toward the start line</li>
+                <li><code>flex-end</code>: items are packed toward to end line</li>
+                <li><code>center</code>: items are centered along the line</li>
+                <li><code>space-between</code>: items are evenly distributed in the line; first item is on the start line, last item on the end line</li>
+                <li><code>space-around</code>: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren't equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.</li>
+                <li><code>space-evenly</code>: items are distributed so that the spacing between any two items (and the space to the edges) is equal</li>
+            </ul>
 
             <br />
             <p><code>align-items</code>
                 <br />This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the <code>justify-content</code> version for the cross-axis (perpendicular to the main-axis).
             </p>
             <pre><code>align-items: flex-start | flex-end | center | baseline | stretch;</code></pre>
-            <p><code>flex-start</code>: cross-start margin edge of the items is placed on the cross-start line</p>
-            <p><code>flex-end</code>: cross-end margin edge of the items is placed on the cross-end line</p>
-            <p><code>center</code>: items are centered in the cross-axis</p>
-            <p><code>baseline</code>: items are aligned such as their baselines align</p>
-            <p><code>stretch</code> (default): stretch to fill the container (still respect min-width/max-width)</p>
+            <ul>
+                <li><code>flex-start</code>: cross-start margin edge of the items is placed on the cross-start line</li>
+                <li><code>flex-end</code>: cross-end margin edge of the items is placed on the cross-end line</li>
+                <li><code>center</code>: items are centered in the cross-axis</li>
+                <li><code>baseline</code>: items are aligned such as their baselines align</li>
+                <li><code>stretch</code> (default): stretch to fill the container (still respect min-width/max-width)</li>
+            </ul>
 
             <br />
             <p><code>align-content</code>
@@ -176,13 +184,14 @@
                 <br /><br /><b>Note:</b> this property has no effect when there is only one line of flex items.
             </p>
             <pre><code>align-content: flex-start | flex-end | center | space-between | space-around | stretch;</code></pre>
-            <p><code>flex-start</code>: lines packed to the start of the container</p>
-            <p><code>flex-end</code>: lines packed to the end of the container</p>
-            <p><code>center</code>: lines packed to the center of the container</p>
-            <p><code>space-between</code>: lines evenly distributed; the first line is at the start of the container while the last one is at the end</p>
-            <p><code>space-around</code>: lines evenly distributed with equal space around each line</p>
-            <p><code>stretch</code> (default): lines stretch to take up the remaining space</p>
-
+            <ul>
+                <li><code>flex-start</code>: lines packed to the start of the container</li>
+                <li><code>flex-end</code>: lines packed to the end of the container</li>
+                <li><code>center</code>: lines packed to the center of the container</li>
+                <li><code>space-between</code>: lines evenly distributed; the first line is at the start of the container while the last one is at the end</li>
+                <li><code>space-around</code>: lines evenly distributed with equal space around each line</li>
+                <li><code>stretch</code> (default): lines stretch to take up the remaining space</li>
+            </ul>
 
             <br />
             <p><b>Properties for the Children (flex items)</b>
@@ -254,130 +263,161 @@
                 <br />Defines the element as a grid container and establishes a new grid formatting context for its contents.
             </p>
             <pre><code>display: grid | inline-grid;</code></pre>
-            <p><code>grid</code>: generates a block-level grid</p>
-            <p><code>inline-grid</code>: generates an inline-level grid</p>
-
+            <ul>
+                <li><code>grid</code>: generates a block-level grid</li>
+                <li><code>inline-grid</code>: generates an inline-level grid</li>
+            </ul>
+            
             <br />
             <p><code>grid-template-columns</code>, <code>grid-template-rows</code>
                 <br />Defines the columns and rows of the grid with a space-separated list of values. The values represent the track size, and the space between them represents the grid line.
             </p>
             <pre><code>grid-template-columns: &lt;track-size&gt; ... | &lt;line-name&gt; &lt;track-size&gt; ...;<br />grid-template-rows: &lt;track-size&gt; ... | &lt;line-name&gt; &lt;track-size&gt; ...;</code></pre>
-            <p><code>&lt;track-size&gt;</code>: can be a length, a percentage, or a fraction of the free space in the grid (using the <code>fr</code> unit)</p>
-            <p><code>&lt;line-name&gt;</code>: an arbitrary name of your choosing</p>
+            <ul>
+                <li><code>&lt;track-size&gt;</code>: can be a length, a percentage, or a fraction of the free space in the grid (using the <code>fr</code> unit)</li>
+                <li><code>&lt;line-name&gt;</code>: an arbitrary name of your choosing</li>
+            </ul>
 
             <br />
             <p><code>grid-template-areas</code>
                 <br />Defines a grid template by referencing the names of the grid areas which are specified with the <code>grid-area</code> property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.
             </p>
             <pre><code>grid-template-areas:<br />    "&lt;grid-area-name&gt; | . | none | ..."<br />    "...";</code></pre>
-            <p><code>&lt;grid-area-name&gt;</code>: the name of a grid area specified with <code>grid-area</code></p>
-            <p><code>.</code>: a period signifies an empty grid cell</p>
-            <p><code>none</code>: no grid areas are defined</p>
-
+            <ul>
+                <li><code>&lt;grid-area-name&gt;</code>: the name of a grid area specified with <code>grid-area</code></li>
+                <li><code>.</code>: a period signifies an empty grid cell</li>
+                <li><code>none</code>: no grid areas are defined</li>
+            </ul>
+            
             <br />
             <p><code>grid-template</code>
                 <br />A shorthand for setting <code>grid-template-rows</code>, <code>grid-template-columns</code>, and <code>grid-template-areas</code> in a single declaration.
             </p>
             <pre><code>grid-template: none | &lt;grid-template-rows&gt; / &lt;grid-template-columns&gt;;</code></pre>
-            <p><code>none</code>: sets all three properties to their initial values</p>
-            <p><code>&lt;grid-template-rows&gt; / &lt;grid-template-columns&gt;&lt;/grid-template-columns&gt;</code>: sets <code>grid-template-columns</code> and <code>grid-template-rows</code> to the specified values, respectively, and sets <code>grid-template-areas</code> to <code>none</code></p>
+            <ul>
+                <li><code>none</code>: sets all three properties to their initial values</li>
+                <li><code>&lt;grid-template-rows&gt; / &lt;grid-template-columns&gt;&lt;/grid-template-columns&gt;</code>: sets <code>grid-template-columns</code> and <code>grid-template-rows</code> to the specified values, respectively, and sets <code>grid-template-areas</code> to <code>none</code></li>       
+            </ul>
 
             <br />
             <p><code>grid-column-gap</code>, <code>grid-row-gap</code>
                 <br />Specifies the size of the grid lines. You can think of it like setting the width of the gutters between the columns/rows.
             </p>
             <pre><code>grid-column-gap: &lt;line-size&gt;;<br />grid-row-gap: &lt;line-size&gt;;</code></pre>
-            <p><code>&lt;line-size&gt;</code>: length value</p>
-
+            <ul>
+                <li><code>&lt;line-size&gt;</code>: length value</li>
+            </ul>
+            
             <br />
             <p><code>grid-gap</code>
                 <br />A shorthand for <code>grid-row-gap</code> and <code>grid-column-gap</code>
             </p>
             <pre><code>grid-gap: &lt;grid-row-gap&gt; &lt;grid-column-gap&gt;;</code></pre>
-            <p><code>&lt;grid-row-gap&gt; &lt;grid-column-gap&gt;</code>: length values</p>
-            <br /><p>If no <code>grid-row-gap</code> is specified, it's set to the same value as <code>grid-column-gap</code></p>
+            <ul>
+                <li><code>&lt;grid-row-gap&gt; &lt;grid-column-gap&gt;</code>: length values</li>
+            </ul>
+            <p>If no <code>grid-row-gap</code> is specified, it's set to the same value as <code>grid-column-gap</code></p>
 
             <br />
             <p><code>justify-items</code>
                 <br />Aligns grid items along the <em>inline (row)</em> axis (as opposed to <code>align-items</code> which aligns along the <em>block (column)</em> axis). This value applies to all grid items inside the container.
             </p>
             <pre><code>justify-items: start | end | center | stretch;</code></pre>
-            <p><code>start</code>: aligns items to be flush with the start edge of their cell</p>
-            <p><code>end</code>: aligns items to be flush with the end edge of their cell</p>
-            <p><code>center</code>: aligns items in the center of their cell</p>
-            <p><code>stretch</code>: fills the whole width of the cell (this is the default)</p>
+            <ul>
+                <li><code>start</code>: aligns items to be flush with the start edge of their cell</li>
+                <li><code>end</code>: aligns items to be flush with the end edge of their cell</li>
+                <li><code>center</code>: aligns items in the center of their cell</li>
+                <li><code>stretch</code>: fills the whole width of the cell (this is the default)</li>
+            </ul>
 
             <br />
             <p><code>align-items</code>
                 <br />Aligns grid items along the <em>block (column)</em> axis (as opposed to <code>justify-items</code> which aligns along the <em>inline (row)</em> axis). This value applies to all grid items inside the container.
             </p>
             <pre><code>align-items: start | end | center | stretch;</code></pre>
-            <p><code>start</code>: aligns items to be flush with the start edge of their cell</p>
-            <p><code>end</code>: aligns items to be flush with the end edge of their cell</p>
-            <p><code>center</code>: aligns items in the center of their cell</p>
-            <p><code>stretch</code>: fills the whole height of the cell (this is the default)</p>
+            <ul>
+                <li><code>start</code>: aligns items to be flush with the start edge of their cell</li>
+                <li><code>end</code>: aligns items to be flush with the end edge of their cell</li>
+                <li><code>center</code>: aligns items in the center of their cell</li>
+                <li><code>stretch</code>: fills the whole height of the cell (this is the default)</li>
+            </ul>
 
             <br />
             <p><code>place-items</code>
                 <br /><code>place-items</code> sets both the <code>align-items</code> and <code>justify-items</code> properties in a single declaration.
             </p>
-            <p><code>&lt;align-items&gt; / &lt;justify-items&gt;</code>: The first value sets <code>align-items</code>, the second value <code>justify-items</code>. If the second value is omitted, the first value is assigned to both properties.</p>
+            <ul>
+                <li><code>&lt;align-items&gt; / &lt;justify-items&gt;</code>: The first value sets <code>align-items</code>, the second value <code>justify-items</code>. If the second value is omitted, the first value is assigned to both properties.</li>
+            </ul>
 
             <br />
             <p><code>justify-content</code>
                 <br />Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like <code>px</code>. In this case you can set the alignment of the grid within the grid container. This property aligns the grid along the <em>inline (row)</em> axis (as opposed to <code>align-content</code> which aligns the grid along the <em>block (column)</em> axis).
             </p>
-            <p><code>start</code>: aligns the grid to be flush with the start edge of the grid container</p>
-            <p><code>end</code>: aligns the grid to be flush with the end edge of the grid container</p>
-            <p><code>center</code>: aligns the grid in the center of the grid container</p>
-            <p><code>stretch</code>: resizes the grid items to allow the grid to fill the full width of the grid container</p>
-            <p><code>space-around</code>: places an even amount of space between each grid item, with half-sized spaces on the far ends</p>
-            <p><code>space-between</code>: places an even amount of space between each grid item, with no space at the far ends</p>
-            <p><code>space-evenly</code>: places an even amount of space between each grid item, including the far ends</p>
+            <ul>
+                <li><code>start</code>: aligns the grid to be flush with the start edge of the grid container</li>
+                <li><code>end</code>: aligns the grid to be flush with the end edge of the grid container</li>
+                <li><code>center</code>: aligns the grid in the center of the grid container</li>
+                <li><code>stretch</code>: resizes the grid items to allow the grid to fill the full width of the grid container</li>
+                <li><code>space-around</code>: places an even amount of space between each grid item, with half-sized spaces on the far ends</li>
+                <li><code>space-between</code>: places an even amount of space between each grid item, with no space at the far ends</li>
+                <li><code>space-evenly</code>: places an even amount of space between each grid item, including the far ends</li>
+            </ul>
 
             <br />
             <p><code>align-content</code>
                 <br />Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like <code>px</code>. In this case you can set the alignment of the grid within the grid container. This property aligns the grid along the <em>block (column)</em> axis (as opposed to <code>justify-content</code> which aligns the grid along the <em>inline (row)</em> axis).
             </p>
-            <p><code>start</code>: aligns the grid to be flush with the start edge of the grid container</p>
-            <p><code>end</code>: aligns the grid to be flush with the end edge of the grid container</p>
-            <p><code>center</code>: aligns the grid in the center of the grid container</p>
-            <p><code>stretch</code>: resizes the grid items to allow the grid to fill the full height of the grid container</p>
-            <p><code>space-around</code>: places an even amount of space between each grid item, with half-sized spaces on the far ends</p>
-            <p><code>space-between</code>: places an even amount of space between each grid item, with no space at the far ends</p>
-            <p><code>space-evenly</code>: places an even amount of space between each grid item, including the far ends</p>
+            <ul>
+                <li><code>start</code>: aligns the grid to be flush with the start edge of the grid container</li>
+                <li><code>end</code>: aligns the grid to be flush with the end edge of the grid container</li>
+                <li><code>center</code>: aligns the grid in the center of the grid container</li>
+                <li><code>stretch</code>: resizes the grid items to allow the grid to fill the full height of the grid container</li>
+                <li><code>space-around</code>: places an even amount of space between each grid item, with half-sized spaces on the far ends</li>
+                <li><code>space-between</code>: places an even amount of space between each grid item, with no space at the far ends</li>
+                <li><code>space-evenly</code>: places an even amount of space between each grid item, including the far ends</li>
+            </ul>
 
             <br />
             <p><code>place-content</code>
                 <br /><code>place-content</code> sets both the <code>align-content</code> and <code>justify-content</code> properties in a single declaration.
             </p>
-            <p><code>&lt;align-content&gt; / &lt;justify-content&gt;</code>: The first value sets <code>align-content</code>, the second value <code>justify-content</code>. If the second value is omitted, the first value is assigned to both properties.</p>
+            <ul>
+                <li><code>&lt;align-content&gt; / &lt;justify-content&gt;</code>: The first value sets <code>align-content</code>, the second value <code>justify-content</code>. If the second value is omitted, the first value is assigned to both properties.</li>
+            </ul>
 
             <br />
             <p><code>grid-auto-columns</code>, <code>grid-auto-rows</code>
                 <br />Specifies the size of any auto-generated grid tracks (aka <em>implicit grid tracks</em>). Implicit tracks get created when there are more grid items than cells in the grid or when a grid item is placed outside of the explicit grid.
             </p>
             <pre><code>grid-auto-columns: &lt;track-size&gt; ...;<br />grid-auto-rows: &lt;track-size&gt; ...;</code></pre>
-            <p><code>&lt;track-size&gt;</code>: can be a length, a percentage, or a fraction of the free space in the grid (using the <code>fr</code> unit)</p>
+            <ul>
+                <li><code>&lt;track-size&gt;</code>: can be a length, a percentage, or a fraction of the free space in the grid (using the <code>fr</code> unit)</li>
+            </ul>
 
             <br />
             <p><code>grid-auto-flow</code>
                 <br />If you have grid items that you don't explicitly place on the grid, the <em>auto-placement algorithm</em> kicks in to automatically place the items. This property controls how the auto-placement algorithm works.
             </p>
             <pre><code>grid-auto-flow: row | column | row dense | column dense</code></pre>
-            <p><code>row</code>: tells the auto-placement algorithm to fill in each row in turn, adding new rows as necessary (default)</p>
-            <p><code>column</code>: tells the auto-placement algorithm to fill in each column in turn, adding new columns as necessary</p>
-            <p><code>dense</code>: tells the auto-placement algorithm to attempt to fill in holes earlier in the grid if smaller items come up later</p>
+            <ul>
+                <li><code>row</code>: tells the auto-placement algorithm to fill in each row in turn, adding new rows as necessary (default)</li>
+                <li><code>column</code>: tells the auto-placement algorithm to fill in each column in turn, adding new columns as necessary</li>
+                <li><code>dense</code>: tells the auto-placement algorithm to attempt to fill in holes earlier in the grid if smaller items come up later</li>
+            </ul>
 
             <br />
             <p><code>grid</code>
                 <br />A shorthand for setting all of the following properties in a single declaration: <code>grid-template-rows</code>, <code>grid-template-columns</code>, <code>grid-template-areas</code>, <code>grid-auto-rows</code>, <code>grid-auto-columns</code>, and <code>grid-auto-flow</code> (Note: You can only specify the explicit or the implicit grid properties in a single grid declaration).
             </p>
-            <p><code>none</code>: sets all sub-properties to their initial values.</p>
-            <p><code>&lt;grid-template&gt;</code>: works the same as the <code>grid-template shorthand</code>.</p>
-            <p><code>&lt;grid-template-rows&gt; / [ auto-flow && dense? ] &lt;grid-auto-columns&gt;?</code>: sets <code>grid-template-rows</code> to the specified value. If the <code>auto-flow</code> keyword is to the right of the slash, it sets <code>grid-auto-flow</code> to <code>column</code>. If the <code>dense</code> keyword is specified additionally, the auto-placement algorithm uses a “dense” packing algorithm. If <code>grid-auto-columns</code> is omitted, it is set to <code>auto</code>.</p>
-            <p><code>[ auto-flow && dense? ] &lt;grid-auto-rows&gt;? / &lt;grid-template-columns&gt;</code>: sets <code>grid-template-columns</code> to the specified value. If the <code>auto-flow</code> keyword is to the left of the slash, it sets <code>grid-auto-flow</code> to <code>row</code>. If the <code>dense</code> keyword is specified additionally, the auto-placement algorithm uses a “dense” packing algorithm. If <code>grid-auto-rows</code> is omitted, it is set to <code>auto</code>.</p>
+            <ul>
+                <li><code>none</code>: sets all sub-properties to their initial values.</li>
+                <li><code>&lt;grid-template&gt;</code>: works the same as the <code>grid-template shorthand</code>.</li>
+                <li><code>&lt;grid-template-rows&gt; / [ auto-flow && dense? ] &lt;grid-auto-columns&gt;?</code>: sets <code>grid-template-rows</code> to the specified value. If the <code>auto-flow</code> keyword is to the right of the slash, it sets <code>grid-auto-flow</code> to <code>column</code>. If the <code>dense</code> keyword is specified additionally, the auto-placement algorithm uses a “dense” packing algorithm. If <code>grid-auto-columns</code> is omitted, it is set to <code>auto</code>.</li>
+                <li><code>[ auto-flow && dense? ] &lt;grid-auto-rows&gt;? / &lt;grid-template-columns&gt;</code>: sets <code>grid-template-columns</code> to the specified value. If the <code>auto-flow</code> keyword is to the left of the slash, it sets <code>grid-auto-flow</code> to <code>row</code>. If the <code>dense</code> keyword is specified additionally, the auto-placement algorithm uses a “dense” packing algorithm. If <code>grid-auto-rows</code> is omitted, it is set to <code>auto</code>.</li>
+            </ul>
             
+
             <br />
             <p><b>Properties for the Children (grid items)</b>
                 <br /><br /><b>Note:</b> <code>float</code>, <code>display: inline-block</code>, <code>display: table-cell</code>, <code>vertical-align</code> and <code>column-*</code> properties have no effect on a grid item.
@@ -388,32 +428,87 @@
                 <br />Determines a grid item's location within the grid by referring to specific grid lines. <code>grid-column-start</code>/<code>grid-row-start</code> is the line where the item begins, and <code>grid-column-end</code>/<code>grid-row-end</code> is the line where the item ends.
             </p>
             <pre><code>grid-column-start: &lt;number&gt; | &lt;name&gt; | span &lt;number&gt; | span &lt;name&gt; | auto<br />grid-column-end: &lt;number&gt; | &lt;name&gt; | span &lt;number&gt; | span &lt;name&gt; | auto<br />grid-row-start: &lt;number&gt; | &lt;name&gt; | span &lt;number&gt; | span &lt;name&gt; | auto<br />grid-row-end: &lt;number&gt; | &lt;name&gt; | span &lt;number&gt; | span &lt;name&gt; | auto</code></pre>
-            <p><code>&lt;line&gt;</line></code>: can be a number to refer to a numbered grid line, or a name to refer to a named grid line</p> 
-            <p><code>span &lt;number&gt;</number></code>: the item will span across the provided number of grid tracks</p>
-            <p><code>span &lt;name&gt;</name></code>: the item will span across until it hits the next line with the provided name</p> 
-            <p><code>auto</code>: indicates auto-placement, an automatic span, or a default span of one</p>
+            <ul>
+                <li><code>&lt;line&gt;</line></code>: can be a number to refer to a numbered grid line, or a name to refer to a named grid line</li> 
+                <li><code>span &lt;number&gt;</number></code>: the item will span across the provided number of grid tracks</li>
+                <li><code>span &lt;name&gt;</name></code>: the item will span across until it hits the next line with the provided name</li> 
+                <li><code>auto</code>: indicates auto-placement, an automatic span, or a default span of one</li>
+            </ul>
 
             <br />
             <p><code>grid-column</code>, <code>grid-row</code>
                 <br />Shorthand for <code>grid-column-start</code> + <code>grid-column-end</code>, and <code>grid-row-start</code> + <code>grid-row-end</code>, respectively.
             </p>
             <pre><code>grid-column: &lt;start-line&gt; / &lt;end-line&gt; | &lt;start-line&gt; / span &lt;value&gt;;<br />grid-row: &lt;start-line&gt; / &lt;end-line&gt; | &lt;start-line&gt; / span &lt;value&gt;;</code></pre>
-            <p><code>&lt;start-line&gt; / &lt;end-line&gt;</code>: each one accepts all the same values as the longhand version, including span</p>
+            <ul>
+                <li><code>&lt;start-line&gt; / &lt;end-line&gt;</code>: each one accepts all the same values as the longhand version, including span</li>
+            </ul>
 
             <br />
             <p><code>grid-area</code>
                 <br />Gives an item a name so that it can be referenced by a template created with the <code>grid-template-areas</code> property. Alternatively, this property can be used as an even shorter shorthand for <code>grid-row-start</code> + <code>grid-column-start</code> + <code>grid-row-end</code> + <code>grid-column-end</code>.
             </p>
             <pre><code>grid-area: &lt;name&gt; | &lt;row-start&gt; / &lt;column-start&gt; / &lt;row-end&gt; / &lt;column-end&gt;;</code></pre>
-            <p><code>&lt;name&gt;</code>: a name of your choosing</p>
-            <p><code>&lt;row-start&gt; / &lt;column-start&gt; / &lt;row-end&gt; / &lt;column-end&gt;</code>: can be numbers or named lines</p>
+            <ul>
+                <li><code>&lt;name&gt;</code>: a name of your choosing</li>
+                <li><code>&lt;row-start&gt; / &lt;column-start&gt; / &lt;row-end&gt; / &lt;column-end&gt;</code>: can be numbers or named lines</li>
+            </ul>
 
+            <br />
+            <p><code>justify-self</code>
+                <br />Aligns a grid item inside a cell along the <em>inline (row)</em> axis (as opposed to <code>align-self</code> which aligns along the <em>block (column)</em> axis). This value applies to a grid item inside a single cell.
+            </p>
+            <pre><code>justify-self: start | end | center | stretch;</code></pre>
+            <ul>
+                <li><code>start</code>: aligns the grid item to be flush with the start edge of the cell</li>
+                <li><code>end</code>: aligns the grid item to be flush with the end edge of the cell</li>
+                <li><code>center</code>: aligns the grid item in the center of the cell</li>
+                <li><code>stretch</code>: fills the whole width of the cell (this is the default)</li>
+            </ul>
 
+            <br />
+            <p><code>align-self</code>
+                <br />Aligns a grid item inside a cell along the <em>block (column)</em> axis (as opposed to <code>justify-self</code> which aligns along the <em>inline (row)</em> axis). This value applies to the content inside a single grid item.
+            </p>
+            <pre><code>align-self: start | end | center | stretch;</code></pre>
+            <ul>
+                <li><code>start</code>: aligns the grid item to be flush with the start edge of the cell</li>
+                <li><code>end</code>: aligns the grid item to be flush with the end edge of the cell</li>
+                <li><code>center</code>: aligns the grid item in the center of the cell</li>
+                <li><code>stretch</code>: fills the whole height of the cell (this is the default)</li>
+            </ul>
+
+            <br />
+            <p><code>place-self</code>
+                <br /><code>place-self</code> sets both the <code>align-self</code> and <code>justify-self</code> properties in a single declaration.
+            </p>
+            <ul>
+                <li><code>auto</code>: The “default” alignment for the layout mode.</li>
+                <li><code>&lt;align-self&gt; / &lt;justify-self&gt;</code>: The first value sets <code>align-self</code>, the second value <code>justify-self</code>. If the second value is omitted, the first value is assigned to both properties.</li>
+            </ul>
+
+            <br/ ><p>For more info, <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="blank">click here</a>.</p>
         </section>
 
 
         <section id="References" class="main-section">
             <header>References</header>
+            <p>
+                <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="blank">Bootstrap</a>
+                <br />
+                <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="blank">CSS Flexbox</a>
+                <br />
+                <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="blank">CSS Grid</a>
+            </p>
+
+            <br />
+            <p><b>Minigames for Learning Responsive Web Design</b>
+                <br />
+                <br />
+                <a href="https://flexboxfroggy.com/" target="blank">Flexbox Froggy</a>
+                <br />
+                <a href="http://cssgridgarden.com/" target="blank">Grid Garden</a>
+            </p>
         </section>
     </main>
 

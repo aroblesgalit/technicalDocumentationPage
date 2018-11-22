@@ -72,6 +72,14 @@ pre {
     margin-bottom: 20px;
 }
 
+.main-section ul {
+    list-style-type: none;
+}
+
+.main-section li {
+    margin-top: 10px;
+}
+
 @media only screen and (max-width: 815px) {
     #navbar {
         width: 100%;
@@ -102,5 +110,22 @@ pre {
         left: 0;
         height: calc(100% - 200px);
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    #navbar {
+        border-bottom: 1px solid rgb(121, 121, 121);
+        z-index: 2;
+    }
+
+    #main-doc header {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    
+    #navbar ul li {
+        width: 100%;
+        background-color: #fafafa;
     }
 }
